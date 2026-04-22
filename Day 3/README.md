@@ -1,4 +1,4 @@
-# Reusable Solana Wallet (Node.js)
+# Understand SOL and Lamports
 
 This project demonstrates how to get balance and convert sol to lamports and vice versa.
 
