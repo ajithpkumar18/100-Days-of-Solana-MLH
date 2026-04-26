@@ -1,0 +1,1 @@
+The CLI wallet was fastest and best for development but least secure since keys are stored as a file. The browser wallet balanced usability and security with password protection and transaction approvals. The mobile wallet felt most secure with biometrics. I’d use CLI for testing, browser for dApps, and mobile for holding funds.
