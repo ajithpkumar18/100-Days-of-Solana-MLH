@@ -36,3 +36,6 @@ coverage
 
 # Optional ignore walletprivate files
 wallet.json
+
+#important files
+~/
