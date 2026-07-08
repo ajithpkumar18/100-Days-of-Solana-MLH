@@ -1,0 +1,12 @@
+If you face an error while running the command 
+spl-token transfer [MINT_ADDRESS] 100 [SECOND_WALLET_OWNER_ADDRESS] --expected-fee 1
+
+C:\Users\ajith>spl-token transfer 7wMryRKdbHbJrsMfzxA6mMsJ3u1tHZSL1nV76PYeLZVV 100 CFZzRPBcqPgNqTsbRP2pZVrDXTJegVUP4xWQdg5yHYVG --expected-fee 1
+Transfer 100 tokens
+  Sender: HhfWWZVvF9qpWTNRXj7Do9sxmWUM5Wm5gvXZRiHJiLyp
+  Recipient: CFZzRPBcqPgNqTsbRP2pZVrDXTJegVUP4xWQdg5yHYVG
+Error: "Error: The recipient address is not funded. Add `--allow-unfunded-recipient` to complete the transfer."
+
+It is because spl-token --version 5.3.0 is unable to find the token accounts associated to a given address, for tokens made using the token-22 program.
+If you create the token using spl-token create-token it'll be fine if you use the Token-22 program, then you will have to provide the ATA address as the second argument for 2nd user address.
+ 
